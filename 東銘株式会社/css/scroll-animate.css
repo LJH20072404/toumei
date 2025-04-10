@@ -1,0 +1,64 @@
+.scroll-animate {
+    opacity: 0;
+    transform: translateX(0) translateY(0);
+}
+
+/* 左滑入 */
+.slide-in-left.show {
+    animation: slideInLeft 0.8s ease-out forwards;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* 右滑入 */
+.slide-in-right.show {
+    animation: slideInRight 0.8s ease-out forwards;
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* 上滑入 */
+.slide-in-top.show {
+    animation: slideInTop 0.8s ease-out forwards;
+}
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* 下滑入 */
+.slide-in-bottom.show {
+    animation: slideInBottom 0.8s ease-out forwards;
+}
+@keyframes slideInBottom {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

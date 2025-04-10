@@ -1,0 +1,104 @@
+.collection-message p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.collection-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px auto;
+}
+.btn-left,
+.btn-right {
+    display: flex;
+    max-width: 100%;
+}
+.btn {
+    max-width: 20%;
+    width: 100%;
+}
+.btn img {
+    max-width: 48%;
+    border-radius: 10px;
+}
+.scroll-animate {
+    text-align: center;
+}
+.buy-contact {
+    background: url(ホーム/問い合わせbackground.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+.buy-contact-inside {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+}
+.buy-contact-inside h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 5vh;
+}
+.buy-contact-inside p {
+    margin-bottom: 6vh;
+}
+.buy-contact-inside a {
+    font-size: 1em;
+    color: #fff;
+    background-color: rgba(0, 134, 42, 1);
+    padding: 2vh 3vw;
+    border-radius: 50px;
+}
+.buy-contact {
+    max-width: 60%;
+    text-align: center;
+    margin: 5vh auto;
+}
+.product-title {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(232, 232, 232, 1);
+    padding-top: 1.7vh;
+    padding-bottom: 1.7vh;
+    padding-left: 15px;
+    align-items: center;
+    gap: 5px;
+}
+.product-content {
+    margin: 3vh 10px;
+}
+.product-message {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    margin-top: 2vh;
+}
+.product-message p {
+    max-width: 60%;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.4;
+}
+@media (max-width: 768px) {
+    .buy-contact {
+        max-width: 100%;
+    }
+    .btn-left,
+    .btn-right {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .collection-btn {
+        gap: 1vh;
+    }
+    .product-message {
+        display: flex;
+        flex-direction: column;
+    }
+    .product-message p {
+        max-width: 100%;
+    }
+}
