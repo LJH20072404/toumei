@@ -308,8 +308,7 @@
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
     color: #333;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 5vh 10vw;
 }
 .hiring h3 {
     font-size: 1.85rem;
