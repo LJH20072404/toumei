@@ -1,0 +1,148 @@
+.tel-ask-message {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.tel-ask-message h3 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-bottom: 2vh;
+}
+.tel-ask-message p {
+    line-height: 1.6;
+    font-size: 0.9em;
+}
+.pc-ask-title p:nth-of-type(1) {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+.pc-ask-title p:nth-of-type(2) {
+    font-size: 0.7em;
+    color: rgba(255, 0, 0, 1);
+}
+.pc-ask-title {
+    margin-top: 2vh;
+}
+.contact-form {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: vh;
+}
+.contact-form th {
+    background-color: #88bfe8;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    vertical-align: top;
+    width: 25%;
+    vertical-align: middle;
+}
+.contact-form td {
+    background-color: #fff;
+    padding: 10px;
+}
+.required {
+    color: red;
+}
+.contact-form input {
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 5px;
+}
+.contact-form textarea {
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 5px;
+}
+.contact-form th,
+.contact-form td {
+    border-right: 1px solid rgba(204, 204, 204, 1);
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+}
+.contact-form tr {
+    border-top: 1px solid rgba(204, 204, 204, 1);
+    border-left: 1px solid rgba(204, 204, 204, 1);
+    font-size: 0.85em;
+}
+select, input[type="text"] {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.custom-select {
+    appearance: none; /* 去掉浏览器默认箭头 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px; /* 给右边留出空间放箭头 */
+}
+.custom-select-wrapper::after {
+    content: '▼';
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* 让鼠标点不到这个箭头 */
+}
+td select,
+.email input:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+input[type="email"] {
+    height: 30px;
+    padding: 5px 10px;
+}
+.last-conform p {
+    font-weight: 700;
+    border: rgba(204, 204, 204, 1) 1px solid;
+    margin-top: 1vh;
+    padding: 1vh 1vw;
+}
+.last-conform textarea {
+    font-size: 0.8em;
+    border: rgba(204, 204, 204, 1) 1px solid;
+    margin-top: 1vh;
+    padding: 1vh 1vw;
+}
+.conform input[type="checkbox"] {
+    appearance: auto;
+    -webkit-appearance: auto;
+}
+.conform {
+    text-align: center;
+    margin-top: 2vh;
+}
+.conform a {
+    font-size: 0.7em;
+    color: #fff;
+    background-color: rgba(0, 134, 42, 1);
+    padding: 1vh 1vw;
+    border-radius: 5px;
+}
+.contact-message td {
+    display: flex;
+    gap: 30px;
+}
+@media screen and (max-width: 768px) {
+    .contact-form tr {
+        display: block;
+      margin-bottom: 20px; /* 每行之间加点空隙 */
+    }
+    .contact-form th,
+    .contact-form td {
+        display: block;
+        width: 100%;
+    }
+    .contact-form th {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    .contact-message td {
+        display: block;
+    }
+    .input-item:nth-of-type(1) {
+        margin-bottom: 1vh;
+    }
+}

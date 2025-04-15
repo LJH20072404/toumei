@@ -1,0 +1,104 @@
+.title {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1vh;
+    padding-left: 1vw;
+    padding-bottom: 1vh;
+    align-items: center;
+    gap: 0.7vw;
+    border-bottom: 1px dotted #333;
+    margin-top: 2vh;
+}
+.title img {
+    width: 10px;
+    height: 10px;
+}
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 0.9em;
+    gap: 5vw;
+}
+.message img {
+    width: 12%;
+    border-radius: 50%;
+}
+.message ul,
+.message p {
+    width: 70%;
+    text-align: left;
+    line-height: 1.25;
+}
+.special-01,
+.special-02 {
+    font-weight: 700;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+
+}
+.special-02 {
+    color: rgba(0, 136, 204, 1);
+}
+.tel-process-message {
+    margin-bottom: 10vh;
+}
+.special p {
+    font-size: 0.9em;
+    line-height: 1.25;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+.buy-contact {
+    background: url(ホーム/問い合わせbackground.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+.buy-contact-inside {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+}
+.buy-contact-inside h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 5vh;
+}
+.buy-contact-inside p {
+    margin-bottom: 6vh;
+}
+.buy-contact-inside a {
+    font-size: 1em;
+    color: #fff;
+    background-color: rgba(0, 134, 42, 1);
+    padding: 2vh 3vw;
+    border-radius: 50px;
+}
+.buy-contact {
+    max-width: 60%;
+    text-align: center;
+    margin: 5vh auto;
+}
+@media (max-width: 768px) {
+    .message {
+        display: flex;
+        flex-direction: column;
+    }
+    .message img {
+        width: 70%;
+    }
+    .message ul,
+    .message p {
+        font-size: 1.25em;
+        width: 100%;
+    }
+    .special p {
+        font-size: 1.25em;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .buy-contact {
+        max-width: 100%;
+    }
+}

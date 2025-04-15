@@ -1,0 +1,27 @@
+.title {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1vh;
+    padding-left: 1vw;
+    padding-bottom: 1vh;
+    align-items: center;
+    gap: 0.7vw;
+    border-bottom: 1px dotted #333;
+    margin-top: 2vh;
+    width: 100%;
+}
+.title img {
+    width: 10px;
+    height: 10px;
+}
+.message {
+    width: 90%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.tel-process-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

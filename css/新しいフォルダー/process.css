@@ -1,0 +1,148 @@
+.nav-pc li:nth-child(3) {
+    color: rgba(45, 101, 205, 1);
+}
+.big-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 80px;
+    width: 100%;
+    max-width: 100%;
+}
+.small-title h3 {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgba(38, 87, 178, 1);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.small-title {
+    border-bottom: 4px solid rgba(0, 0, 0, 1);
+}
+.process-container {
+    max-width: 85vw;
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+}
+.title {
+    display: flex;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted rgba(55, 134, 195, 1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 8px;
+    align-items: center;
+}
+.title img {
+    max-width: 12px;
+    max-height: 12px;
+}
+.title p {
+    font-size: 18px;
+    color: #333;
+}
+.message {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    gap: 60px;
+}
+.message img {
+    border-radius: 50%;
+}
+.message li {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.special-01 {
+    font-weight: bolder;
+}
+.special-02 a {
+    color: rgba(0, 136, 204, 1);
+    font-weight: bolder;
+}
+.tel-process {
+    margin-top: 40px;
+}
+.message ul,
+.message p {
+    max-width: 70%;
+}
+.buy-contact {
+    background: url(ホーム/問い合わせbackground.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+.buy-contact-inside {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px 60px 50px;
+}
+.buy-contact-inside h3 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.6;
+    letter-spacing: 0.1em
+}
+.buy-contact-inside p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.buy-contact-inside a {
+    background-color: rgba(0, 135, 37, 1);
+    color: #fff;
+    border: 1px solid rgba(0, 135, 37, 1);
+    transition: all 0.3s ease-in-out;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.buy-contact-inside a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 135, 37, 1);
+}
+.buy-contact {
+    max-width: 60vw;
+    margin: 80px auto 0px;
+}
+@media (max-width: 768px) {
+    .big-title h1 {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    .message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: unset;
+    }
+    .buy-contact {
+        margin: unset;
+        width: 80vw;
+        margin: 40px auto;
+    }
+    .buy-contact h3 {
+        font-size: 15px;
+    }
+    .buy-contact p {
+        font-size: 10px;
+    }
+    .buy-contact-inside {
+        padding: 20px;
+    }
+}
