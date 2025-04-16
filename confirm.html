@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東銘株式会社ホームページ</title>
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/confirm.css">
+    <link rel="stylesheet" href="css/scroll-animate.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-left">
+                <a href="index.html"><img src="img/ホーム/toumei-logo.png" alt="logo" class="logo"></a>
+                <!--hamburger-->
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-bg"></div>
+                <div class="menu-content">
+                    <ul>
+                        <li>
+                            <a href="index.html">ホーム</a>
+                        </li>
+                        <li>
+                            <a href="collection.html">取扱い品目</a>
+                        </li>
+                        <li>
+                            <a href="process.html">ご利用の流れ</a>
+                        </li>
+                        <li>
+                            <a href="safty.html">環境・安全への取り組み</a>
+                        </li>
+                        <li>
+                            <a href="company.html">会社案内</a>
+                        </li>
+                        <li>
+                            <a href="consultation.html">お問合せ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-top-right">
+                <div class="company-tel">
+                    <h3>TEL:043-312-9261</h3>
+                    <p>お電話のお問合せはこちらから</p>
+                </div>
+                <a href="consultation.html" class="talking">お問合せフォーム</a>
+            </div>
+        </div>
+        <nav class="nav-pc">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="collection.html">取扱い品目</a></li>
+                <li><a href="process.html">ご利用の流れ</a></li>
+                <li><a href="safty.html">環境・安全への取り組み</a></li>
+                <li><a href="company.html">会社案内</a></li>
+                <li><a href="consultation.html">お問合せ</a></li>
+            </ul>
+        </nav>
+        <div class="title-container">
+            <h3>お問合せ</h3>
+        </div>
+    </header>
+    <main>
+        <div class="confirm-message">
+            <p>入力内容をご確認の上、よろしければ送信ボタンを押してください。</p>
+            <p>入力した内容を修正するにはキャンセルをクリックしてください。</p>
+        </div>
+        <table class="message">
+            <tr>
+                <th>お名前</th>
+                <td><span id="fullName"></span></td>
+            </tr>
+            <tr>
+                <th>フリガナ</th>
+                <td><span id="fullKana"></span></td>
+            </tr>
+            <tr>
+                <th>郵便番号</th>
+                <td><span id="zip"></span></td>
+            </tr>
+            <tr>
+                <th>住所</th>
+                <td><span id="address"></span></td>
+            </tr>
+            <tr>
+                <th>電話番号</th>
+                <td><span id="tel"></span></td>
+            </tr>
+            <tr>
+                <th>メールアドレス</th>
+                <td><span id="email"></span></td>
+            </tr>
+            <tr>
+                <th>お問合せ内容</th>
+                <td><span id="message"></span></td>
+            </tr>
+        </table>
+        <div class="confirm-btn">
+            <a href="consultation.html">キャンセル</a>
+            <a href="thanks.html">送信する</a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-message">
+            <div>
+                <p>金属回収に関するご質問・ご相談承ります。</p>
+                <p>まずはお気軽にお問合せください。</p>
+                <a href="index.html"><img src="img/ホーム/toumei-logo.png" alt="logo" class="logo"></a>
+            </div>
+            <a href="consultation.html" class="talking">お問合せフォーム</a>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="collection.html">取扱い品目</a></li>
+                <li><a href="process.html">ご利用の流れ</a></li>
+            </ul>
+            <ul>
+                <li><a href="safty.html">環境・安全への取り組み</a></li>
+                <li><a href="company.html">会社案内</a></li>
+                <li><a href="consultation.html">お問合せ</a></li>
+            </ul>
+        </div>
+        <div class="footer-message-bottom">
+            <p>Copyright (c) 2023 - 2025 東銘株式会社 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("fullName").textContent = sessionStorage.getItem("lastName") + " " + sessionStorage.getItem("firstName");
+        document.getElementById("fullKana").textContent = sessionStorage.getItem("lastKana") + " " + sessionStorage.getItem("firstKana");
+        document.getElementById("zip").textContent = sessionStorage.getItem("zip1") + "-" + sessionStorage.getItem("zip2");
+        document.getElementById("address").textContent = sessionStorage.getItem("pref") + " " + sessionStorage.getItem("address");
+        document.getElementById("tel").textContent = sessionStorage.getItem("tel1") + "-" + sessionStorage.getItem("tel2") + "-" + sessionStorage.getItem("tel3");
+        document.getElementById("email").textContent = sessionStorage.getItem("email");
+        document.getElementById("message").textContent = sessionStorage.getItem("message");
+    </script>
+    <button id="backToTop"></button>
+</body>
+</html>

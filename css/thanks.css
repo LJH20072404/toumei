@@ -1,0 +1,20 @@
+.thanks-box {
+    max-width: 600px;
+    margin: 5vh auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+.thanks-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.thanks-box a {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 0.5em 2em;
+    background-color: rgba(0, 135, 37, 1);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}

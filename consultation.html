@@ -84,109 +84,145 @@
                 <p>以下の入力フォームに必要事項を入力していただき「入力内容を確認」ボタンを押してください。</p>
                 <p>※の必須項目は必ずご入力ください。</p>
             </div>
-            <table class="contact-form">
-                <tr class="contact-message">
-                    <th><label for="name">お名前 <span class="required">※</span></label></th>
-                    <td>
-                        <div class="input-item">姓　 <input type="text" name="last-name"></div>
-                        <div class="input-item">名　 <input type="text" name="last-name"></div>
-                    </td>
-                </tr>
-                <tr class="contact-message">
-                    <th><label for="furigana">フリガナ <span class="required">※</span></label></th>
-                    <td>
-                        <div class="input-item">セイ <input type="text" name="last-name"></div>
-                        <div class="input-item">メイ <input type="text" name="last-name"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <th>郵便番号</th>
-                    <td>
-                    <input type="text" name="zip1" size="3"> - 
-                    <input type="text" name="zip2" size="4">
-                    </td>
-                </tr>
-                <tr>
-                    <th>住所</th>
-                    <td>
-                    <div class="custom-select-wrapper">
-                        <select class="custom-select">
-                            <option>選択してください</option>
-                            <option>千葉県</option>
-                            <option>神奈川県</option>
-                            <option>宮城県</option>
-                            <option>埼玉県</option>
-                            <option>福島県</option>
-                            <option>大阪府</option>
-                            <option>京都府</option>
-                            <option>愛知県</option>
-                            <option>滋賀県</option>
-                            <option>福岡県</option>
-                            <option>山梨県</option>
-                            <option>静岡県</option>
-                            <option>長野県</option>
-                        </select>
+            <form action="" id="contactForm">
+                <table class="contact-form">
+                    <tr class="contact-message">
+                        <th><label>お名前 <span class="required">※</span></label></th>
+                        <td>
+                            <div class="input-item">姓 <input type="text" name="lastName"></div>
+                            <div class="input-item">名 <input type="text" name="firstName"></div>
+                        </td>
+                    </tr>
+                    <tr class="contact-message">
+                        <th><label>フリガナ <span class="required">※</span></label></th>
+                        <td>
+                            <div class="input-item">セイ <input type="text" name="lastKana"></div>
+                            <div class="input-item">メイ <input type="text" name="firstKana"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>郵便番号</th>
+                        <td>
+                        <input type="text" name="zip1" size="3"> - 
+                        <input type="text" name="zip2" size="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>住所</th>
+                        <td>
+                        <div class="custom-select-wrapper">
+                            <select class="custom-select" name="pref">
+                                <option>選択してください</option>
+                                <option>北海道</option>
+                                <option>青森県</option>
+                                <option>岩手県</option>
+                                <option>宮城県</option>
+                                <option>秋田県</option>
+                                <option>山形県</option>
+                                <option>福島県</option>
+                                <option>茨城県</option>
+                                <option>栃木県</option>
+                                <option>群馬県</option>
+                                <option>埼玉県</option>
+                                <option>千葉県</option>
+                                <option>東京都</option>
+                                <option>神奈川県</option>
+                                <option>山梨県</option>
+                                <option>長野県</option>
+                                <option>新潟県</option>
+                                <option>富山県</option>
+                                <option>石川県</option>
+                                <option>福井県</option>
+                                <option>岐阜県</option>
+                                <option>静岡県</option>
+                                <option>愛知県</option>
+                                <option>三重県</option>
+                                <option>滋賀県</option>
+                                <option>京都府</option>
+                                <option>大阪府</option>
+                                <option>兵庫県</option>
+                                <option>奈良県</option>
+                                <option>和歌山県</option>
+                                <option>鳥取県</option>
+                                <option>島根県</option>
+                                <option>岡山県</option>
+                                <option>広島県</option>
+                                <option>山口県</option>
+                                <option>徳島県</option>
+                                <option>香川県</option>
+                                <option>愛媛県</option>
+                                <option>高知県</option>
+                                <option>福岡県</option>
+                                <option>佐賀県</option>
+                                <option>長崎県</option>
+                                <option>熊本県</option>
+                                <option>大分県</option>
+                                <option>宮崎県</option>
+                                <option>鹿児島県</option>
+                                <option>沖縄県</option>
+                            </select>
+                        </div>
+                        <br>
+                        <input type="text" name="address" style="width: 80%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>電話番号</th>
+                        <td>
+                        <input type="text" name="tel1" size="4"> -
+                        <input type="text" name="tel2" size="4"> -
+                        <input type="text" name="tel3" size="4">
+                        </td>
+                    </tr>
+                    <tr class="email">
+                        <th>メールアドレス <span class="required">※</span></th>
+                        <td>
+                        <input type="email" name="email"><br>
+                        <input type="email" name="email-confirm">（確認用）
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>お問合せ内容 <span class="required">※</span></th>
+                        <td><textarea name="message" rows="7" cols="50" style="width: 80%;"></textarea></td>
+                    </tr>
+                </table>
+                <div class="last-conform">
+                    <p>個人情報の取り扱いについて</p>
+                    <textarea rows="8" readonly style="width: 100%;">
+    1．個人情報の定義
+    　個人情報とは、個人に関する情報であり、氏名・生年月日・住所をはじめ電話番号・メールアドレスなど、個人が識別できるものをいいます。また、組み合わせることによって個人が識別できる情報も個人情報として取り扱います。
+    
+    2．個人情報を収集する目的
+    　当社のサービスに関する個人情報使用目的は下記となります。
+    　・サービスに関する連絡および通知
+    　・当社からの情報提供(広告を含む)
+    　・お客様のご意見やご感想の回答のお願い
+    
+    3．個人情報の利用・提供
+    　個人情報は前述の目的の範囲内で利用いたします。
+    　また、原則外部の第三者に個人情報を提供することはありませんが、その場合も本人の了解を得た上で行います。サイトからご登録いただきました個人情報の開示・訂正・削除につきましてはメールにてお申し出ください。
+    　また、その他の情報の開示・訂正・削除を希望される場合は、後述の連絡先メールアドレスまでメールにてご連絡ください。折り返し開示・訂正・削除手続きについてご案内します。
+    　なお、ご本人であることの確認が十分に取れない場合、あるいは当社の業務に支障がある場合には、ご要望にお応えできない場合もございますので、あらかじめご了承下さい。
+    
+    4．外部委託
+    　個人情報の処理を外部に委託する際に、個人情報を預託する場合があります。委託処理を行う場合には、十分な個人情報保護水準を確保していることを条件として委託先を選定し、機密保持契約を結んだ上で行います。
+    
+    5．個人情報の管理
+    　個人情報への不当なアクセスまたは個人情報の紛失、破壊、改竄、漏洩などの危険に対して、技術面及び組織面において必要な安全対策を継続的に講じるよう努めています。
+    
+    6．お問合せなど
+    　本件に関するお問合せは下記までお願い申し上げます。
+    　東銘株式会社　個人情報保護責任者　TEL:043-312-9261
+                    </textarea>
+                    <div class="conform">
+                        <label>利用規約に同意する</label> 
+                        <input type="checkbox">
+                        <br>
+                        <br> 
+                        <button type="submit">入力内容を確認</button>
                     </div>
-                    <br>
-                    <input type="text" name="address" style="width: 80%;">
-                    </td>
-                </tr>
-                <tr>
-                    <th>電話番号</th>
-                    <td>
-                    <input type="text" name="tel1" size="4"> -
-                    <input type="text" name="tel2" size="4"> -
-                    <input type="text" name="tel3" size="4">
-                    </td>
-                </tr>
-                <tr class="email">
-                    <th>メールアドレス <span class="required">※</span></th>
-                    <td>
-                    <input type="email" name="email"><br>
-                    <input type="email" name="email-confirm">（確認用）
-                    </td>
-                </tr>
-                <tr>
-                    <th>お問合せ内容 <span class="required">※</span></th>
-                    <td><textarea name="message" rows="7" cols="50" style="width: 80%;"></textarea></td>
-                </tr>
-            </table>
-            <div class="last-conform">
-                <p>個人情報の取り扱いについて</p>
-                <textarea rows="8" readonly style="width: 100%;">
-1．個人情報の定義
-　個人情報とは、個人に関する情報であり、氏名・生年月日・住所をはじめ電話番号・メールアドレスなど、個人が識別できるものをいいます。また、組み合わせることによって個人が識別できる情報も個人情報として取り扱います。
-
-2．個人情報を収集する目的
-　当社のサービスに関する個人情報使用目的は下記となります。
-　・サービスに関する連絡および通知
-　・当社からの情報提供(広告を含む)
-　・お客様のご意見やご感想の回答のお願い
-
-3．個人情報の利用・提供
-　個人情報は前述の目的の範囲内で利用いたします。
-　また、原則外部の第三者に個人情報を提供することはありませんが、その場合も本人の了解を得た上で行います。サイトからご登録いただきました個人情報の開示・訂正・削除につきましてはメールにてお申し出ください。
-　また、その他の情報の開示・訂正・削除を希望される場合は、後述の連絡先メールアドレスまでメールにてご連絡ください。折り返し開示・訂正・削除手続きについてご案内します。
-　なお、ご本人であることの確認が十分に取れない場合、あるいは当社の業務に支障がある場合には、ご要望にお応えできない場合もございますので、あらかじめご了承下さい。
-
-4．外部委託
-　個人情報の処理を外部に委託する際に、個人情報を預託する場合があります。委託処理を行う場合には、十分な個人情報保護水準を確保していることを条件として委託先を選定し、機密保持契約を結んだ上で行います。
-
-5．個人情報の管理
-　個人情報への不当なアクセスまたは個人情報の紛失、破壊、改竄、漏洩などの危険に対して、技術面及び組織面において必要な安全対策を継続的に講じるよう努めています。
-
-6．お問合せなど
-　本件に関するお問合せは下記までお願い申し上げます。
-　東銘株式会社　個人情報保護責任者　TEL:043-312-9261
-                </textarea>
-                <div class="conform">
-                    <label>利用規約に同意する</label> 
-                    <input type="checkbox">
-                    <br>
-                    <br> 
-                    <a href="#">入力内容を確認</a>
                 </div>
-            </div>
+            </form>
         </div>
     </main>
     <footer>
@@ -212,7 +248,27 @@
             <p>Copyright (c) 2023 - 2025 東銘株式会社 All Rights Reserved.</p>
         </div>
     </footer>
+    <script>
+        const form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const fields = [
+                "lastName", "firstName",
+                "lastKana", "firstKana",
+                "zip1", "zip2",
+                "pref", "address",
+                "tel1", "tel2", "tel3",
+                "email", "emailConfirm",
+                "message"
+            ];
+            fields.forEach(name => {
+                const val = form[name]?.value || "";
+                sessionStorage.setItem(name, val);
+            });
+            window.location.href = "confirm.html";
+        });
+    </script>
     <button id="backToTop"></button>
-    <script src="index.js"></script>
 </body>
 </html>

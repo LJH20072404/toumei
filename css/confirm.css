@@ -1,0 +1,72 @@
+.message th {
+    background-color: rgba(138, 179, 236, 1);
+}
+.message {
+    border-left: 1px solid rgba(221, 221, 221, 1);
+    border-top: 1px solid rgba(221, 221, 221, 1);
+    width: 100%;
+}
+.message th,
+.message td {
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
+    border-right: 1px solid rgba(221, 221, 221, 1);
+    padding: 10px;
+    color: #333;
+}
+.message th {
+    color: #fff;
+    width: 30%;
+    white-space: nowrap; /* 防止换行 */
+    font-size: 0.7em;
+}
+.message td {
+    font-size: 0.7em;
+    width: 70%;
+    word-wrap: break-word; /* 多行换行显示 */
+}
+main {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+.confirm-message {
+    text-align: left;
+    font-size: 0.7em;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 2vh;
+}
+.confirm-btn {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin: 3vh auto;
+}
+.confirm-btn a:nth-of-type(1) {
+    background-color: rgba(238, 238, 238, 1);
+    color: rgba(51, 51, 51, 1);
+    font-size: 0.8em;
+    padding: 10px 20px;
+    border: 1px solid rgba(178, 178, 178, 1);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.confirm-btn a:nth-of-type(1):hover {
+    background-color: rgba(185, 185, 185, 1);
+    transform: scale(1.05);
+}
+.confirm-btn a:nth-of-type(2) {
+    background-color: rgba(0, 134, 42, 1);
+    color: rgb(242, 249, 244);
+    font-size: 0.8em;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 134, 42, 1);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.confirm-btn a:nth-of-type(2):hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
