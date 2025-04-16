@@ -66,6 +66,24 @@
 .message th {
     font-weight: 400;
 }
+.contact-form tr {
+    margin-bottom: 1em;
+    display: block;  /* 让每行分开，更适配手机 */
+}
+.contact-form th {
+    text-align: left;
+    width: 20%;
+    padding-right: 10px;
+}
+.contact-form td {
+    width: 80%;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
 @media (max-width: 768px) {
     .message td {
         word-break: break-all;

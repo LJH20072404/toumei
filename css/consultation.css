@@ -130,6 +130,7 @@ input[type="email"] {
     display: flex;
     gap: 30px;
 }
+
 @media screen and (max-width: 768px) {
     .contact-form tr {
         display: block;
